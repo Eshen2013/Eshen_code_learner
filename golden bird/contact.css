@@ -1,0 +1,26 @@
+.blue-BG {
+    height: 447.5px;
+    width: auto;
+    background-color: blue;
+}
+.link-external  {
+    display: block;
+    text-align: center;
+}
+.link-external  a {
+    padding: 14px, 30px;
+    color: rgb(255, 255, 255);
+    font-family: Aachen BT;
+    text-decoration: none;
+}
+.link-external a:hover {
+    text-decoration: underline;
+}
+.text-title{
+    color: white;
+    padding-left: 120px;
+}
+.phone-number1{
+    color: white;
+    padding-left: 140px;
+}
