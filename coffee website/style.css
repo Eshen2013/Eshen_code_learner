@@ -448,3 +448,55 @@ header .navbar{
         width: 100%;
     }
 }
+
+.clock{
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 5px solid #f5f5f5;;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.clock ul li{
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+}
+
+.clock ul li span{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+.clock:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.needle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.needle span{
+    width: 5px;
+    height: var(--h);
+    background-color: var(--clr);
+    position: absolute;
+    border-radius: 5px;
+}
